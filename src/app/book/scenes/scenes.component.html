@@ -1,0 +1,14 @@
+<h1>{{ 'the-book.scenes.title' | transloco }}</h1>
+
+<div class="nation-container">
+  <mat-card class="nation" *ngFor="let nation of nations">
+    <mat-card-title>{{
+      'the-book.scenes.nations.' + nation | transloco
+    }}</mat-card-title>
+    <mat-card-subtitle>Unberührte Natur</mat-card-subtitle>
+    <img
+      mat-card-image
+      src="/assets/images/scenes/canada/canada_rectangular_carbon_icon_256.png"
+    />
+  </mat-card>
+</div>

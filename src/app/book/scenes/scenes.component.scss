@@ -1,0 +1,11 @@
+.nation-container {
+  display: flex;
+  flex-direction: row;
+
+  .nation {
+    width: 256px;
+    height: auto;
+    cursor: pointer;
+    margin: 20px;
+  }
+}

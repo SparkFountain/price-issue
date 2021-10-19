@@ -1,0 +1,17 @@
+{
+  "title": "Price Issue",
+  "menu": {
+    "the-book": {
+      "title": "The Book",
+      "scenes": "Scenes",
+      "characters": "Characters",
+      "extract": "Extract",
+      "download": "Download"
+    },
+    "background": {
+      "title": "Background",
+      "overtourism": "Overtourism",
+      "green-conscience": "Green Conscience"
+    }
+  }
+}

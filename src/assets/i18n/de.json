@@ -1,0 +1,33 @@
+{
+  "title": "Preisfrage",
+  "menu": {
+    "the-book": {
+      "title": "Das Buch",
+      "scenes": "Schauplätze",
+      "characters": "Charaktere",
+      "extract": "Leseprobe",
+      "download": "Download"
+    },
+    "background": {
+      "title": "Hintergrund",
+      "overtourism": "Overtourismus",
+      "green-conscience": "Grünes Gewissen"
+    }
+  },
+  "the-book": {
+    "scenes": {
+      "title": "Schauplätze",
+      "nations": {
+        "canada": "Kanada",
+        "france": "Frankreich",
+        "germany": "Deutschland",
+        "new-zealand": "Neuseeland",
+        "portugal": "Portugal"
+      }
+    }
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "imprint": "Impressum"
+  }
+}
