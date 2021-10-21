@@ -18,11 +18,30 @@
     "scenes": {
       "title": "Schauplätze",
       "nations": {
-        "canada": "Kanada",
-        "france": "Frankreich",
-        "germany": "Deutschland",
-        "new-zealand": "Neuseeland",
-        "portugal": "Portugal"
+        "canada": {
+          "title": "Kanada",
+          "subtitle": "Unberührte Natur"
+        },
+        "france": {
+          "title": "Frankreich",
+          "subtitle": "Lorem Ipsum"
+        },
+        "germany": {
+          "title": "Deutschland",
+          "subtitle": "Lorem Ipsum"
+        },
+        "new-zealand": {
+          "title": "Neuseeland",
+          "subtitle": "Lorem Ipsum"
+        },
+        "portugal": {
+          "title": "Portugal",
+          "subtitle": "Lorem Ipsum"
+        },
+        "spain": {
+          "title": "Spanien",
+          "subtitle": "Inselwelten"
+        }
       }
     }
   },

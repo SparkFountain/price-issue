@@ -29,6 +29,26 @@ const routes: Routes = [
     loadChildren: () =>
       import('./background/background.module').then((m) => m.BackgroundModule),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./footer/footer.module').then((m) => m.FooterModule),
+  },
+  {
+    path: 'kontakt',
+    loadChildren: () =>
+      import('./footer/footer.module').then((m) => m.FooterModule),
+  },
+  {
+    path: 'imprint',
+    loadChildren: () =>
+      import('./footer/footer.module').then((m) => m.FooterModule),
+  },
+  {
+    path: 'imprint',
+    loadChildren: () =>
+      import('./footer/footer.module').then((m) => m.FooterModule),
+  },
 ];
 
 @NgModule({

@@ -6,17 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scenes.component.scss'],
 })
 export class ScenesComponent implements OnInit {
-  nations!: string[];
+  nations!: {[key: string]: string[]};
 
   constructor() {}
 
   ngOnInit(): void {
-    this.nations = [
-      'canada',
-      'france',
-      'germany',
-      'new-zealand',
-      'portugal',
-    ];
+    this.nations = {
+      canada: ['vancouver', 'vancouver-island'],
+      france: ['la-reunion'],
+      germany: ['berlin', 'dresden', 'usedom'],
+      'new-zealand': ['auckland', 'christchurch', 'ranfurly', 'russell'],
+      portugal: ['madeira'],
+      spain: ['gran-canaria']
+    };
   }
 }

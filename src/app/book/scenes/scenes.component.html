@@ -1,14 +1,22 @@
-<h1>{{ 'the-book.scenes.title' | transloco }}</h1>
+<h1>{{ "the-book.scenes.title" | transloco }}</h1>
 
 <div class="nation-container">
-  <mat-card class="nation" *ngFor="let nation of nations">
+  <mat-card class="nation" *ngFor="let nation of nations | keyvalue">
     <mat-card-title>{{
-      'the-book.scenes.nations.' + nation | transloco
+      "the-book.scenes.nations." + nation.key + ".title" | transloco
     }}</mat-card-title>
-    <mat-card-subtitle>Unberührte Natur</mat-card-subtitle>
+    <mat-card-subtitle>{{
+      "the-book.scenes.nations." + nation.key + ".subtitle" | transloco
+    }}</mat-card-subtitle>
     <img
       mat-card-image
-      src="/assets/images/scenes/canada/canada_rectangular_carbon_icon_256.png"
+      [src]="
+        '/assets/images/scenes/' +
+        nation.key +
+        '/' +
+        nation.key +
+        '_rectangular_icon_with_frame_256.png'
+      "
     />
   </mat-card>
 </div>
