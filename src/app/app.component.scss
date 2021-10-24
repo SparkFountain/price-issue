@@ -9,9 +9,13 @@
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: calc(100vh - 164px);
   background: url('../assets/images/home.jpg');
+  overflow: hidden;
 }
 
 footer {

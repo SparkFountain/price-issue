@@ -1,6 +1,14 @@
-<h1>{{ "the-book.characters.title" | transloco }}</h1>
+<h1>{{ 'the-book.characters.title' | transloco }}</h1>
 
-<div class="character-container">
+<div class="character-container" [style.left]="containerOffset + 'px'">
+  <div
+    class="arrow left"
+    (mousedown)="handleScrollDirection('left')"
+    (mouseup)="handleScrollDirection(false)"
+  >
+    <i class="fas fa-chevron-circle-left"></i>
+  </div>
+
   <mat-card
     class="character"
     *ngFor="let character of characters"
@@ -10,11 +18,20 @@
     <mat-card-subtitle>
       {{ character.age }}<br />
       {{
-      "the-book.characters.jobs." + character.job | transloco
-    }}</mat-card-subtitle>
+        'the-book.characters.jobs.' + character.job | transloco
+      }}</mat-card-subtitle
+    >
     <img
       mat-card-image
       [src]="'/assets/images/characters/' + character.imagePath"
     />
   </mat-card>
+
+  <div
+    class="arrow right"
+    (mousedown)="handleScrollDirection('right')"
+    (mouseup)="handleScrollDirection(false)"
+  >
+    <i class="fas fa-chevron-circle-right"></i>
+  </div>
 </div>
