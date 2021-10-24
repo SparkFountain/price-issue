@@ -20,4 +20,8 @@ export class ScenesComponent implements OnInit {
       spain: ['gran-canaria']
     };
   }
+
+  handleSelectNation(nation: string): void {
+    console.log('[HANDLE SELECT NATION]', nation);
+  }
 }

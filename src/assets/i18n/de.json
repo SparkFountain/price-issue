@@ -43,6 +43,15 @@
           "subtitle": "Inselwelten"
         }
       }
+    },
+    "characters": {
+      "title": "Charaktere",
+      "nationalities": {
+        "german": "Deutsch"
+      },
+      "jobs": {
+        "tourism-business-woman": "Tourismus-Kauffrau"
+      }
     }
   },
   "footer": {

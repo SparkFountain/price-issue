@@ -1,0 +1,11 @@
+.character-container {
+  display: flex;
+  flex-direction: row;
+
+  .character {
+    width: 256px;
+    height: auto;
+    cursor: pointer;
+    margin: 20px;
+  }
+}

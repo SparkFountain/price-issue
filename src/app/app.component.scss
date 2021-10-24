@@ -9,7 +9,9 @@
 }
 
 main {
-  margin: 20px;
+  width: 100%;
+  height: calc(100vh - 164px);
+  background: url('../assets/images/home.jpg');
 }
 
 footer {
@@ -18,7 +20,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100px;
-  background: var(--$light-bg-darker-20);
+  background: #{$light-bg-darker-20};
 
   display: flex;
   flex-direction: column;

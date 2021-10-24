@@ -1,7 +1,11 @@
 <h1>{{ "the-book.scenes.title" | transloco }}</h1>
 
 <div class="nation-container">
-  <mat-card class="nation" *ngFor="let nation of nations | keyvalue">
+  <mat-card
+    class="nation"
+    *ngFor="let nation of nations | keyvalue"
+    (click)="handleSelectNation(nation.key)"
+  >
     <mat-card-title>{{
       "the-book.scenes.nations." + nation.key + ".title" | transloco
     }}</mat-card-title>
