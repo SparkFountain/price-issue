@@ -6,22 +6,37 @@
       {{ 'menu.the-book.title' | transloco }}
     </button>
     <mat-menu #book="matMenu">
-      <button mat-menu-item routerLink="/das-buch/schauplaetze">{{ 'menu.the-book.scenes' | transloco }}</button>
-      <button mat-menu-item routerLink="/das-buch/charaktere">
+      <button mat-menu-item [routerLink]="'the-book.scenes.path' | transloco">
+        {{ 'menu.the-book.scenes' | transloco }}
+      </button>
+      <button
+        mat-menu-item
+        [routerLink]="'the-book.characters.path' | transloco"
+      >
         {{ 'menu.the-book.characters' | transloco }}
       </button>
-      <button mat-menu-item>{{ 'menu.the-book.extract' | transloco }}</button>
-      <button mat-menu-item>{{ 'menu.the-book.download' | transloco }}</button>
+      <button mat-menu-item [routerLink]="'the-book.extracts.path' | transloco">
+        {{ 'menu.the-book.extracts' | transloco }}
+      </button>
+      <button mat-menu-item [routerLink]="'the-book.download.path' | transloco">
+        {{ 'menu.the-book.download' | transloco }}
+      </button>
     </mat-menu>
 
     <button mat-button [matMenuTriggerFor]="background">
       {{ 'menu.background.title' | transloco }}
     </button>
     <mat-menu #background="matMenu">
-      <button mat-menu-item>
+      <button
+        mat-menu-item
+        [routerLink]="'background.overtourism.path' | transloco"
+      >
         {{ 'menu.background.overtourism' | transloco }}
       </button>
-      <button mat-menu-item>
+      <button
+        mat-menu-item
+        [routerLink]="'background.green-conscience.path' | transloco"
+      >
         {{ 'menu.background.green-conscience' | transloco }}
       </button>
     </mat-menu>

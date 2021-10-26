@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
+import { Slide } from 'src/app/core/dummy-components/slideshow/slide.interface';
 
 @Component({
   selector: 'app-scenes',
@@ -6,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scenes.component.scss'],
 })
 export class ScenesComponent implements OnInit {
-  nations!: {[key: string]: string[]};
+  nations!: { [key: string]: string[] };
+  slides!: Slide[];
 
-  constructor() {}
+  constructor(private translocoService: TranslocoService) {}
 
   ngOnInit(): void {
     this.nations = {
@@ -17,11 +20,16 @@ export class ScenesComponent implements OnInit {
       germany: ['berlin', 'dresden', 'usedom'],
       'new-zealand': ['auckland', 'christchurch', 'ranfurly', 'russell'],
       portugal: ['madeira'],
-      spain: ['gran-canaria']
+      spain: ['gran-canaria'],
     };
-  }
 
-  handleSelectNation(nation: string): void {
-    console.log('[HANDLE SELECT NATION]', nation);
+    this.slides = ['canada', 'france', 'germany', 'portugal', 'spain'].map(
+      (nation: string) => ({
+        title: this.translocoService.translate(
+          `the-book.scenes.nations.${nation}.title`
+        ),
+        imagePath: `assets/images/scenes/${nation}/${nation}_rectangular_icon_with_frame_256.png`,
+      })
+    );
   }
 }

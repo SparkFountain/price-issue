@@ -5,7 +5,7 @@
       "title": "Das Buch",
       "scenes": "Schauplätze",
       "characters": "Charaktere",
-      "extract": "Leseprobe",
+      "extracts": "Leseproben",
       "download": "Download"
     },
     "background": {
@@ -17,6 +17,7 @@
   "the-book": {
     "scenes": {
       "title": "Schauplätze",
+      "path": "/das-buch/schauplaetze",
       "nations": {
         "canada": {
           "title": "Kanada",
@@ -46,12 +47,31 @@
     },
     "characters": {
       "title": "Charaktere",
+      "path": "/das-buch/charaktere",
       "nationalities": {
         "german": "Deutsch"
       },
       "jobs": {
         "tourism-business-woman": "Tourismus-Kauffrau"
       }
+    },
+    "extracts": {
+      "title": "Leseproben",
+      "path": "/das-buch/leseproben"
+    },
+    "download": {
+      "title": "Download",
+      "path": "/das-buch/download"
+    }
+  },
+  "background": {
+    "overtourism": {
+      "title": "Overtourismus",
+      "path": "/hintergrund/overtourismus"
+    },
+    "green-conscience": {
+      "title": "Grünes Gewissen",
+      "path": "/hintergrund/gruenes-gewissen"
     }
   },
   "footer": {

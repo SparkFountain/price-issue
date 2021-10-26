@@ -11,44 +11,25 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
-  {
-    path: 'the-book',
+  ...['the-book', 'das-buch'].map((path: string) => ({
+    path,
     loadChildren: () => import('./book/book.module').then((m) => m.BookModule),
-  },
-  {
-    path: 'das-buch',
-    loadChildren: () => import('./book/book.module').then((m) => m.BookModule),
-  },
-  {
-    path: 'background',
+  })),
+  ...['background', 'hintergrund'].map((path: string) => ({
+    path,
     loadChildren: () =>
       import('./background/background.module').then((m) => m.BackgroundModule),
-  },
-  {
-    path: 'hintergrund',
+  })),
+  ...['contact', 'kontakt'].map((path: string) => ({
+    path,
     loadChildren: () =>
-      import('./background/background.module').then((m) => m.BackgroundModule),
-  },
-  {
-    path: 'contact',
+      import('./contact/contact.module').then((m) => m.ContactModule),
+  })),
+  ...['imprint', 'impressum'].map((path: string) => ({
+    path,
     loadChildren: () =>
-      import('./footer/footer.module').then((m) => m.FooterModule),
-  },
-  {
-    path: 'kontakt',
-    loadChildren: () =>
-      import('./footer/footer.module').then((m) => m.FooterModule),
-  },
-  {
-    path: 'imprint',
-    loadChildren: () =>
-      import('./footer/footer.module').then((m) => m.FooterModule),
-  },
-  {
-    path: 'imprint',
-    loadChildren: () =>
-      import('./footer/footer.module').then((m) => m.FooterModule),
-  },
+      import('./imprint/imprint.module').then((m) => m.ImprintModule),
+  })),
 ];
 
 @NgModule({

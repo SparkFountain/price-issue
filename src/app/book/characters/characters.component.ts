@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Slide } from 'src/app/core/dummy-components/slideshow/slide.interface';
 
 interface Character {
   name: string;
@@ -15,6 +16,7 @@ interface Character {
 })
 export class CharactersComponent implements OnInit {
   characters!: Character[];
+  slides!: Slide[];
   containerOffset!: number;
   isScrolling!: 'left' | 'right' | false;
 
@@ -180,18 +182,11 @@ export class CharactersComponent implements OnInit {
         imagePath: 'jim-black.svg',
       },
     ];
-  }
 
-  handleSelectCharacter(characterName: string): void {
-    console.log('[HANDLE SELECT CHARACTER]', characterName);
-  }
-
-  handleScrollDirection(direction: 'left' | 'right' | false): void {
-    this.isScrolling = direction;
-    this.performScrolling();
-  }
-
-  performScrolling(): void {
-    this.containerOffset = this.isScrolling === 'left' ? 1 : -1;
+    this.slides = this.characters.map((character: Character) => ({
+      title: character.name,
+      subtitle: character.job,
+      imagePath: `/assets/images/characters/${character.imagePath}`,
+    }));
   }
 }
