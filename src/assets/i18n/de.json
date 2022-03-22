@@ -11,7 +11,18 @@
     "background": {
       "title": "Hintergrund",
       "overtourism": "Overtourismus",
+      "ecotourism": "Ökotourismus",
       "green-conscience": "Grünes Gewissen"
+    },
+    "planet-earth-network": {
+      "title": "Planet Earth Network",
+      "history": "Entstehung",
+      "philosophy": "Philosophie",
+      "discovery-spheres": "Discovery-Sphären",
+      "check-online": "Jetzt online testen"
+    },
+    "quiz": {
+      "title": "Quiz"
     }
   },
   "the-book": {
@@ -69,10 +80,36 @@
       "title": "Overtourismus",
       "path": "/hintergrund/overtourismus"
     },
+    "ecotourism": {
+      "title": "Ökotourismus",
+      "path": "/hintergrund/oekotourismus"
+    },
     "green-conscience": {
       "title": "Grünes Gewissen",
       "path": "/hintergrund/gruenes-gewissen"
     }
+  },
+  "planet-earth-network": {
+    "history": {
+      "title": "Wie ein nachhaltiges Unternehmen geboren wurde",
+      "path": "/planet-earth-network/entstehung"
+    },
+    "philosophy": {
+      "title": "Ein soziales Netzwerk von Menschen für Menschen",
+      "path": "/planet-earth-network/philosophie"
+    },
+    "discovery-spheres": {
+      "title": "Erleben ohne Zerstören - Absolut preisgünstig!",
+      "path": "/planet-earth-network/discovery-sphaeren"
+    },
+    "check-online": {
+      "title": "Schön, dass du da bist",
+      "path": "/planet-earth-network/online"
+    }
+  },
+  "quiz": {
+    "title": "Fakten vs. Fiktion - Teste dein Wissen",
+    "path": "/quiz"
   },
   "footer": {
     "contact": "Kontakt",

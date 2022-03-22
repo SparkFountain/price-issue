@@ -2,6 +2,7 @@
   <mat-toolbar-row>
     <span class="brand">{{ 'title' | transloco }}</span>
 
+    <!-- The Book -->
     <button mat-button [matMenuTriggerFor]="book">
       {{ 'menu.the-book.title' | transloco }}
     </button>
@@ -23,6 +24,7 @@
       </button>
     </mat-menu>
 
+    <!-- Background -->
     <button mat-button [matMenuTriggerFor]="background">
       {{ 'menu.background.title' | transloco }}
     </button>
@@ -35,11 +37,53 @@
       </button>
       <button
         mat-menu-item
+        [routerLink]="'background.ecotourism.path' | transloco"
+      >
+        {{ 'menu.background.ecotourism' | transloco }}
+      </button>
+      <button
+        mat-menu-item
         [routerLink]="'background.green-conscience.path' | transloco"
       >
         {{ 'menu.background.green-conscience' | transloco }}
       </button>
     </mat-menu>
+
+    <!-- Planet Earth Network -->
+    <button mat-button [matMenuTriggerFor]="planetEarthNetwork">
+      {{ 'menu.planet-earth-network.title' | transloco }}
+    </button>
+    <mat-menu #planetEarthNetwork="matMenu">
+      <button
+        mat-menu-item
+        [routerLink]="'planet-earth-network.history.path' | transloco"
+      >
+        {{ 'menu.planet-earth-network.history' | transloco }}
+      </button>
+      <button
+        mat-menu-item
+        [routerLink]="'planet-earth-network.philosophy.path' | transloco"
+      >
+        {{ 'menu.planet-earth-network.philosophy' | transloco }}
+      </button>
+      <button
+        mat-menu-item
+        [routerLink]="'planet-earth-network.discovery-spheres.path' | transloco"
+      >
+        {{ 'menu.planet-earth-network.discovery-spheres' | transloco }}
+      </button>
+      <button
+        mat-menu-item
+        [routerLink]="'planet-earth-network.check-online.path' | transloco"
+      >
+        {{ 'menu.planet-earth-network.check-online' | transloco }}
+      </button>
+    </mat-menu>
+
+    <!-- Quiz -->
+    <button mat-button [routerLink]="'quiz.path' | transloco">
+      {{ 'menu.quiz.title' | transloco }}
+    </button>
 
     <span class="spacer"></span>
     <button mat-icon-button>

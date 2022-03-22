@@ -20,6 +20,17 @@ const routes: Routes = [
     loadChildren: () =>
       import('./background/background.module').then((m) => m.BackgroundModule),
   })),
+  ...['planet-earth-network'].map((path: string) => ({
+    path,
+    loadChildren: () =>
+      import('./planet-earth-network/planet-earth-network.module').then(
+        (m) => m.PlanetEarthNetworkModule
+      ),
+  })),
+  ...['quiz'].map((path: string) => ({
+    path,
+    loadChildren: () => import('./quiz/quiz.module').then((m) => m.QuizModule),
+  })),
   ...['contact', 'kontakt'].map((path: string) => ({
     path,
     loadChildren: () =>
