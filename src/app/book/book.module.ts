@@ -11,6 +11,7 @@ import { DownloadComponent } from './download/download.component';
 import { MatCardModule } from '@angular/material/card';
 import { TranslocoModule } from '@ngneat/transloco';
 import { CoreModule } from '../core/core.module';
+import { LiteratureComponent } from './literature/literature.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CoreModule } from '../core/core.module';
     CharactersComponent,
     ExtractsComponent,
     DownloadComponent,
+    LiteratureComponent,
   ],
   imports: [
     CommonModule,

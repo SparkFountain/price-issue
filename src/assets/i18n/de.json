@@ -6,7 +6,8 @@
       "scenes": "Schauplätze",
       "characters": "Charaktere",
       "extracts": "Leseproben",
-      "download": "Download"
+      "download": "Download",
+      "literature": "Literatur"
     },
     "background": {
       "title": "Hintergrund",
@@ -79,6 +80,10 @@
     "download": {
       "title": "Download",
       "path": "/das-buch/download"
+    },
+    "literature": {
+      "title": "Literatur",
+      "path": "/das-buch/literatur"
     }
   },
   "background": {
@@ -114,7 +119,7 @@
     }
   },
   "quiz": {
-    "title": "Fakten vs. Fiktion - Teste dein Wissen",
+    "title": "Fakten vs. Fiktion – Teste dein Wissen",
     "path": "/quiz",
     "true": "Wahr",
     "false": "Falsch",
@@ -131,19 +136,19 @@
       "explanation": "<p>Diese Demonstrationen sind reine Fiktion. Tatsächlich gibt es jedoch <a href=\"https://fluegge-blog.de/drogenviertel-east-hastings-street-vancouver/\" target=\"_blank\">gravierende soziale Probleme</a> in der selbst ernannten \"Schönsten Stadt der Welt\". In der East Hastings Street leben hunderte Obdachlose unter prekären Bedingungen. Drogenabhängige konsumieren auf öffentlichen Straßen ihren Stoff, <a href=\"https://reiselife.com/hasting-street-vancouver-ich-war-schockiert/\" target=\"_blank\">etwa jede dritte Person ist HIV-positiv</a>.</p><p>Die lokalen Behörden kennen die Misere nur zu gut, doch von einer langfristigen Perspektive scheint man weit entfernt: Im Gegenteil, die Drogenkriminalität hat <a href=\"https://www.sueddeutsche.de/panorama/betaeubungsmittel-kanadas-westen-steckt-im-drogen-albtraum-1.3299448\" target=\"_blank\">in den vergangenen Jahren start zugenommen</a>.</p>"
     },
     "2": {
-      "title": "Titel",
-      "question": "Frage",
-      "explanation": "Erklärung"
+      "title": "Rekordeinnahmen durch Tourismus",
+      "question": "Im Jahre 2018 betrugen die weltweiten touristischen Gesamteinnahmen mehr als 1,4 Billionen US-Dollar.",
+      "explanation": "<p>Der Umsatz touristischer Dienstleistungen <a href=\"https://de.statista.com/statistik/daten/studie/187764/umfrage/weltweite-einnahmen-im-tourismus-seit-2000/\" target=\"_blank\">stieg seit 2000 fast kontinuierlich an</a> und betrug 2018 ca. 1,46 Billionen US-Dollar. Lediglich im Zuge der globalen Finanzkrise gab es 2009 einen Einbruch, sowie im Jahre 2015. Die größten Einnahmen aller Reisenden verzeichneten 2019 zuletzt die USA (152 Mrd. $), Spanien (74 Mrd. $) und Frankreich (67 Mrd. $). Im Zuge der weltweiten Corona-Pandemie <a href=\"https://www.handelsblatt.com/politik/deutschland/touristik-reisebranche-erleidet-in-corona-pandemie-massive-umsatzeinbrueche/26838404.html\" target=\"_blank\">brachen die Gewinne ab 2020 jedoch massiv ein</a>.</p>"
     },
     "3": {
-      "title": "Titel",
-      "question": "Frage",
-      "explanation": "Erklärung"
+      "title": "Kreuzfahrten im Kreuzfeuer",
+      "question": "Die großen Reedereien der Kreuzfahrtindustrie stehen in der Kritik, obwohl die allermeisten Luxusdampfer mit umweltfreundlichem Flüssigerdgas betankt werden.",
+      "explanation": "<p>Schön wär's. Bis heute fahren die allermeisten Schiffe weltweit mit Schweröl, welches <a href=\"https://fairaway.de/reisemagazin/kreuzfahrtschiffe-umwelt\" target=\"_blank\">besonders umweltschädlich</a> ist. Von den europäischen Reedereien vollzogen 2017 keine die <a href=\"https://www.nabu.de/umwelt-und-ressourcen/verkehr/schifffahrt/kreuzschifffahrt/23043.html\" target=\"_blank\">versprochenen Investitionen in moderne Abgassysteme bzw. -filter</a>.</p>"
     },
     "4": {
-      "title": "Titel",
-      "question": "Frage",
-      "explanation": "Erklärung"
+      "title": "Overtourism – Nur ein städtisches Problem?",
+      "question": "Abgesehen von beliebten europäischen Großstädten wie Barcelona, Palma de Mallorca, Dubrovnik oder Amsterdam gibt es überhaupt keine Probleme mit Overtourism.",
+      "explanation": "<p>So einfach ist es leider nicht. Auch kleinere Destinationen wie <a href=\"https://www.dw.com/de/zu-viele-touristen-in-venedig/l-41484723\" target=\"_blank\">Venedig</a> oder die Marktgemeinde <a href=\"https://globusliebe.com/hallstatt-massentourismus/\" target=\"_blank\">Hallstatt in Oberösterreich</a> ächzen seit Jahren unter den Touristenmassen. Auf der gesamten Insel Island waren 2017 <a href=\"https://www.reisereporter.de/artikel/9789-island-soll-kein-opfer-von-massentourismus-oder-overtourism-werden-massnahmen\" target=\"_blank\">sieben mal mehr Reisende als Einwohner</a> anzutreffen. Und selbst die Antarktis hat mit <a href=\"https://www.welt.de/reise/Fern/article114768678/Touristen-gefaehrden-die-letzten-unberuehrten-Orte.html\" target=\"_blank\">immer mehr Hobby-Abenteurern und deren Ansprüchen</a> zu kämpfen.</p>"
     },
     "5": {
       "title": "Titel",
@@ -161,7 +166,7 @@
       "explanation": "Erklärung"
     },
     "8": {
-      "title": "Titel",
+      "title": "Sanfter Tourismus",
       "question": "Frage",
       "explanation": "Erklärung"
     },
@@ -176,9 +181,9 @@
       "explanation": "Erklärung"
     },
     "11": {
-      "title": "Titel",
-      "question": "Frage",
-      "explanation": "Erklärung"
+      "title": "Hunderte Festnahmen in Hongkong",
+      "question": "Während einer Falun-Gong-Demonstration in der Kowloon Bay strömten linke Aktivisten auf den Platz und sorgten für Tumulte. Die Polizei nahm über einhundert Menschen fest.",
+      "explanation": "<p>Vor wenigen Jahren waren Demonstrationen in Hongkong noch erlaubt, ohne dass die Polizei einschritt. Hätte es damals Proteste gegen Touristen gegeben, so wäre dies mit Sicherheit toleriert worden.</p><p>Nichts desto trotz gibt es Missstände: Die <a href=\"https://www.nzz.ch/international/falun-gong-ist-in-china-seit-20-jahren-verboten-ld.1496964\" target=\"_blank\">Unterdrückung der friedlichen, aber verbotenen Falun-Gong-Bewegung durch die chinesische Regierung</a> findet seit etwa zwanzig Jahren statt. Mit dem Eintreten des <a href=\"https://www.tagesschau.de/ausland/china-hongkong-sicherheitsgesetz-111.html\" target=\"_blank\">Gesetzes über die nationale Sicherheit</a> im Juni 2020 wurde das vertraglich vereinbarte Prinzip <i><a href=\"https://www.bpb.de/shop/zeitschriften/apuz/305183/ein-land-zwei-systeme/\" target=\"_blank\">Ein Land, zwei Systeme</a></i> de facto abgeschafft.</p>"
     },
     "12": {
       "title": "Titel",
@@ -196,9 +201,9 @@
       "explanation": "Erklärung"
     },
     "15": {
-      "title": "Titel",
-      "question": "Frage",
-      "explanation": "Erklärung"
+      "title": "Gelbwesten legen eine Insel lahm",
+      "question": "Ende November 2018 kam es im Zuge der Gelbwesten-Bewegung nicht nur in Frankreich, sondern auch auf der kleinen Insel La Réunion zu massiven Protesten.",
+      "explanation": "Straßen wurden blockiert, Geschäfte mussten dicht machen, die Regierung orderte Soldaten per Flugzeug auf die Insel. Bei diesen Demonstrationen spielten Touristen indirekt eine Rolle – sie wurden aufgrund ihres <i>Privilegierten-Status'</i> besonders benachteiligt und mussten stundenlang in Staus ausharren."
     },
     "16": {
       "title": "Titel",
@@ -216,7 +221,7 @@
       "explanation": "Erklärung"
     },
     "19": {
-      "title": "Titel",
+      "title": "Kriminalität in Christiania",
       "question": "Frage",
       "explanation": "Erklärung"
     },

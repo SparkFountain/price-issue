@@ -1,15 +1,15 @@
 <div class="quiz-container">
-  <mat-stepper orientation="vertical" [linear]="false" #stepper>
+  <mat-stepper orientation="vertical" [linear]="false" #stepper >
     <mat-step *ngFor="let answer of answers; let i = index">
-      <ng-template matStepLabel>
+      <ng-template matStepLabel [matStepperIcon]="i.toString()">
         {{ 'quiz.' + i + '.title' | transloco }}
       </ng-template>
       <img [src]="'/assets/images/quiz/' + i + '.jpg'" />
       <label>{{ 'quiz.' + i + '.question' | transloco }}</label>
-      <button mat-raised-button color="primary" (click)="userChoices[i] = true">
+      <button mat-raised-button color="primary" (click)="userChoices[i] = true" [disabled]="userChoices[i] !== undefined">
         {{ 'quiz.true' | transloco }}
       </button>
-      <button mat-raised-button color="warn" (click)="userChoices[i] = false">
+      <button mat-raised-button color="warn" (click)="userChoices[i] = false" [disabled]="userChoices[i] !== undefined">
         {{ 'quiz.false' | transloco }}
       </button>
 
