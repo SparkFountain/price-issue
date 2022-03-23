@@ -23,6 +23,12 @@
     },
     "quiz": {
       "title": "Quiz"
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "imprint": {
+      "title": "Impressum"
     }
   },
   "the-book": {
@@ -109,10 +115,166 @@
   },
   "quiz": {
     "title": "Fakten vs. Fiktion - Teste dein Wissen",
-    "path": "/quiz"
+    "path": "/quiz",
+    "true": "Wahr",
+    "false": "Falsch",
+    "you-are-right": "Du hast Recht.",
+    "you-are-wrong": "Du irrst dich.",
+    "0": {
+      "title": "Der verhägnisvolle Absturz",
+      "question": "Am 14. Juli 2016 starb der Chef des Unternehmes Unister, Thomas Wagner, bei einem Flugzeugabsturz in Slowenien. Er verlor am Tag zuvor bei einem RIP-Deal 1,5 Millionen Euro.",
+      "explanation": "<p>So unglaublich es auch klingen mag – Der Prolog von <i>Preisfrage</i> basiert <a href=\"https://www.lvz.de/Thema/Specials/Die-Akte-Unister/Eine-James-Bond-Nummer-Freundin-berichtet-von-Thomas-Wagners-letzten-Stunden\" target=\"_blank\">auf einer wahren Begebenheit</a>. Thomas Wagner gründete im Jahre 2002 das ostdeutsche Unternehmen Unister und eroberte binnen weniger Jahre die noch junge und wenig regulierte Online-Reisebranche. Aufgrund dubioser Geschäftspraktiken <a href=\"https://www.welt.de/wirtschaft/webwelt/article107707228/Die-Machenschaften-des-Abzock-Imperiums-Unister.html\" target=\"_blank\">geriet Unister in die Kritik</a> und stand 2016 beinahe vor dem Aus. Mit einem windigen Kredit-Deal wollte Wagner sein Unternehmen retten, doch er fiel auf einen Trickbetrug herein.</p><p>Umso merkwürdiger schien es, dass Wagner sowie drei weitere Personen am folgenden Tag mit einer kleinen Propellermaschine bei Ajdovščina abstürzten und ums Leben kamen. Während <a href=\"https://www.focus.de/finanzen/news/unister-pleite-im-news-ticker-war-der-unister-absturz-kein-unfall-ermittler-finden-hinweise-auf-fremdeinwirkung_id_6074933.html\" target=\"_blank\">Medien</a> und <a href=\"https://kress.de/news/detail/beitrag/138084-vor-einem-jahr-starb-unister-gruender-thomas-wagner-das-stinkt-zum-himmel.html\" target=\"_blank\">Freunde des Unister-Gründers</a> über eine Verschwörung spekulierten, kam der <a href=\"https://www.sueddeutsche.de/wirtschaft/unister-gruender-thomas-wagner-absturz-report-slowenien-1.5075519\" target=\"_blank\">offizielle Abschlussbericht der slowenischen Flugsicherheitsbehörde</a> zu dem Ergebnis, dass die kleine Maschine eine Gewitterzone durchflog, dabei vereiste und das Höhenleitwerk abbrach, wodurch es zum Absturz kam.</p>"
+    },
+    "1": {
+      "title": "Schönste Stadt der Welt?",
+      "question": "Aus Protest gegen die steigenden Mietpreise in Vancouver zogen im August 2017 dutzende Obdachlose durch die Straßen und forderten Geld von Touristen, bevor diese weitergehen durften.",
+      "explanation": "<p>Diese Demonstrationen sind reine Fiktion. Tatsächlich gibt es jedoch <a href=\"https://fluegge-blog.de/drogenviertel-east-hastings-street-vancouver/\" target=\"_blank\">gravierende soziale Probleme</a> in der selbst ernannten \"Schönsten Stadt der Welt\". In der East Hastings Street leben hunderte Obdachlose unter prekären Bedingungen. Drogenabhängige konsumieren auf öffentlichen Straßen ihren Stoff, <a href=\"https://reiselife.com/hasting-street-vancouver-ich-war-schockiert/\" target=\"_blank\">etwa jede dritte Person ist HIV-positiv</a>.</p><p>Die lokalen Behörden kennen die Misere nur zu gut, doch von einer langfristigen Perspektive scheint man weit entfernt: Im Gegenteil, die Drogenkriminalität hat <a href=\"https://www.sueddeutsche.de/panorama/betaeubungsmittel-kanadas-westen-steckt-im-drogen-albtraum-1.3299448\" target=\"_blank\">in den vergangenen Jahren start zugenommen</a>.</p>"
+    },
+    "2": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "3": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "4": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "5": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "6": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "7": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "8": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "9": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "10": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "11": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "12": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "13": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "14": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "15": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "16": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "17": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "18": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "19": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "20": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "21": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "22": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "23": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "24": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "25": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "26": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "27": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "28": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    },
+    "29": {
+      "title": "Titel",
+      "question": "Frage",
+      "explanation": "Erklärung"
+    }
   },
-  "footer": {
-    "contact": "Kontakt",
-    "imprint": "Impressum"
+  "contact": {
+    "path": "/kontakt"
+  },
+  "imprint": {
+    "path": "/impressum"
   }
 }

@@ -85,6 +85,16 @@
       {{ 'menu.quiz.title' | transloco }}
     </button>
 
+    <!-- Contact -->
+    <button mat-button [routerLink]="'contact.path' | transloco">
+      {{ 'menu.contact.title' | transloco }}
+    </button>
+
+    <!-- Imprint -->
+    <button mat-button [routerLink]="'imprint.path' | transloco">
+      {{ 'menu.imprint.title' | transloco }}
+    </button>
+
     <span class="spacer"></span>
     <button mat-icon-button>
       <mat-icon>login</mat-icon>
@@ -95,8 +105,3 @@
 <main>
   <router-outlet></router-outlet>
 </main>
-
-<footer>
-  <div routerLink="/contact">{{ 'footer.contact' | transloco }}</div>
-  <div routerLink="/imprint">{{ 'footer.imprint' | transloco }}</div>
-</footer>

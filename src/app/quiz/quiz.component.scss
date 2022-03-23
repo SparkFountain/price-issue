@@ -1,0 +1,38 @@
+.quiz-container {
+  width: 100%;
+  height: calc(100vh - 164px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  mat-stepper {
+    width: 768px;
+
+    img {
+      box-shadow: 0 0 10px #013249;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 20px 0;
+
+      &.solution {
+        font-weight: bold;
+      }
+
+      &.right {
+        color: #013249;
+      }
+
+      &.wrong {
+        color: #bc0000;
+      }
+    }
+
+    button {
+      margin: 0 20px 20px 0;
+    }
+  }
+}

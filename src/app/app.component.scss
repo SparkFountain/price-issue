@@ -13,25 +13,7 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: calc(100vh - 164px);
+  height: calc(100vh - 64px);
   background: url('../assets/images/home.jpg');
   overflow: hidden;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: #{$light-bg-darker-20};
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  div {
-    cursor: pointer;
-  }
 }
