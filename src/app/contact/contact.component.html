@@ -2,7 +2,7 @@
   <mat-card-title>{{ "contact.title" | transloco }}</mat-card-title>
   <mat-card-subtitle>{{ "contact.subtitle" | transloco }}</mat-card-subtitle>
   <mat-card-content>
-    <form [formGroup]="formGroup">
+    <form [formGroup]="formGroup" (submit)="handleSubmit()">
       <!-- Name -->
       <mat-form-field appearance="outline">
         <mat-label>{{ "contact.name" | transloco }}</mat-label>
@@ -18,7 +18,12 @@
       <!-- Subject -->
       <mat-form-field appearance="outline">
         <mat-label>{{ "contact.subject.label" | transloco }}</mat-label>
-        <input name="subject" matInput formControlName="subject" [matAutocomplete]="auto" />
+        <input
+          name="subject"
+          matInput
+          formControlName="subject"
+          [matAutocomplete]="auto"
+        />
       </mat-form-field>
       <mat-autocomplete #auto="matAutocomplete">
         <mat-option
@@ -32,8 +37,20 @@
       <!-- Message -->
       <mat-form-field appearance="outline">
         <mat-label>{{ "contact.message" | transloco }}</mat-label>
-        <textarea name="message" matInput formControlName="message" rows="10"></textarea>
+        <textarea
+          name="message"
+          matInput
+          formControlName="message"
+          rows="10"
+        ></textarea>
       </mat-form-field>
+
+      <!-- Re-Captcha -->
+      <re-captcha
+        (resolved)="handleCaptchaResolved(true, $event)"
+        (error)="handleCaptchaResolved(false, $event)"
+        errorMode="handled"
+      ></re-captcha>
 
       <!-- Send Button -->
       <button mat-raised-button color="primary" [disabled]="!formGroup.valid">

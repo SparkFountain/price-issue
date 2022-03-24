@@ -30,4 +30,16 @@ export class ContactComponent implements OnInit {
       'error-report',
     ];
   }
+
+  handleSubmit(): void {
+    console.log('>>> handle submit');
+  }
+
+  handleCaptchaResolved(succeeded: boolean, event: unknown): void {
+    if (succeeded) {
+      console.log('>>> succeeded captcha', event);
+    } else {
+      console.error('>>> failed captcha', event);
+    }
+  }
 }
