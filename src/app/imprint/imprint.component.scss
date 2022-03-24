@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card {
+  width: 768px;
+
+  mat-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .headline {
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .social {
+      
+    }
+  }
+}

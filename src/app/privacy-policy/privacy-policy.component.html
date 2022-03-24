@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-title>{{ "privacy-policy.title" | transloco }}</mat-card-title>
+
+  <mat-card-content>
+    <section>
+      <h3>
+        {{
+          "privacy-policy.content.collection-and-storage.headline" | transloco
+        }}
+      </h3>
+      <p>
+        {{ "privacy-policy.content.collection-and-storage.text" | transloco }}
+      </p>
+      <ul>
+        <li *ngFor="let item of [0, 1, 2, 3, 4]">
+          {{
+            "privacy-policy.content.collection-and-storage.list." + item
+              | transloco
+          }}
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>{{ "privacy-policy.content.processing.headline" | transloco }}</h3>
+      <p></p>
+    </section>
+  </mat-card-content>
+</mat-card>

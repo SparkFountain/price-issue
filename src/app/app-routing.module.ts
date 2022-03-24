@@ -36,6 +36,18 @@ const routes: Routes = [
     loadChildren: () =>
       import('./contact/contact.module').then((m) => m.ContactModule),
   })),
+  ...['privacy-policy', 'datenschutzerklaerung'].map((path: string) => ({
+    path,
+    loadChildren: () =>
+      import('./privacy-policy/privacy-policy.module').then(
+        (m) => m.PrivacyPolicyModule
+      ),
+  })),
+  ...['disclaimer', 'haftungsausschluss'].map((path: string) => ({
+    path,
+    loadChildren: () =>
+      import('./disclaimer/disclaimer.module').then((m) => m.DisclaimerModule),
+  })),
   ...['imprint', 'impressum'].map((path: string) => ({
     path,
     loadChildren: () =>
