@@ -2,6 +2,7 @@
   <mat-card-title>{{ "privacy-policy.title" | transloco }}</mat-card-title>
 
   <mat-card-content>
+    <!-- Collection and Storage -->
     <section>
       <h3>
         {{
@@ -20,9 +21,84 @@
         </li>
       </ul>
     </section>
+
+    <!-- Processing -->
     <section>
       <h3>{{ "privacy-policy.content.processing.headline" | transloco }}</h3>
-      <p></p>
+      <ul>
+        <li *ngFor="let item of [0, 1, 2, 3]">
+          {{ "privacy-policy.content.processing.list." + item | transloco }}
+        </li>
+      </ul>
+      <p>{{ "privacy-policy.content.processing.text" | transloco }}</p>
+    </section>
+
+    <!-- Transfer -->
+    <section>
+      <h3>{{ "privacy-policy.content.transfer.headline" | transloco }}</h3>
+      <p>{{ "privacy-policy.content.transfer.text" | transloco }}</p>
+      <ul>
+        <li *ngFor="let item of [0, 1, 2, 3]">
+          {{ "privacy-policy.content.transfer.list." + item | transloco }}
+        </li>
+      </ul>
+    </section>
+
+    <!-- Data Subject Rights -->
+    <section>
+      <h3>
+        {{ "privacy-policy.content.data-subject-rights.headline" | transloco }}
+      </h3>
+      <p>{{ "privacy-policy.content.data-subject-rights.text" | transloco }}</p>
+      <ul>
+        <li *ngFor="let item of [0, 1, 2, 3, 4, 5]">
+          {{
+            "privacy-policy.content.data-subject-rights.list." + item
+              | transloco
+          }}
+        </li>
+      </ul>
+    </section>
+
+    <!-- Right to Object -->
+    <section>
+      <h3>
+        {{ "privacy-policy.content.right-to-object.headline" | transloco }}
+      </h3>
+      <p>{{ "privacy-policy.content.right-to-object.text" | transloco }}</p>
+    </section>
+
+    <!-- Data Security -->
+    <section>
+      <h3>
+        {{ "privacy-policy.content.data-security.headline" | transloco }}
+      </h3>
+      <p *ngFor="let i of [0, 1, 2]">
+        {{ "privacy-policy.content.data-security.text." + i | transloco }}
+      </p>
+    </section>
+
+    <!-- Source -->
+    <section>
+      <p>
+        <b>{{ "privacy-policy.content.source.label" | transloco }}:</b>
+        <a
+          [href]="'privacy-policy.content.source.link' | transloco"
+          target="_blank"
+          >{{ "privacy-policy.content.source.link" | transloco }}</a
+        >
+      </p>
+    </section>
+
+    <!-- Source -->
+    <section>
+      <h3>
+        {{ "privacy-policy.content.actuality-and-change.headline" | transloco }}
+      </h3>
+
+      <p>
+        {{ "privacy-policy.content.actuality-and-change.text" | transloco }}
+      </p>
     </section>
   </mat-card-content>
 </mat-card>
