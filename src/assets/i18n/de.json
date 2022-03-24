@@ -1,4 +1,7 @@
 {
+  "general": {
+    "send": "Abschicken"
+  },
   "title": "Preisfrage",
   "menu": {
     "the-book": {
@@ -283,7 +286,22 @@
     }
   },
   "contact": {
-    "path": "/kontakt"
+    "title": "Kontakt",
+    "subtitle": "Möchtest du deine Kritik zum Thriller \"Preisfrage\" äußern? Hast du eine Frage zum Buch oder zu dieser Website? Oder willst du vielleicht einfach nur Hallo sagen? Dann nutze gern das folgende Kontaktformular.",
+    "path": "/kontakt",
+    "name": "Name",
+    "email": "E-Mail-Adresse",
+    "subject": {
+      "label": "Thema",
+      "review-book": "Kritik (Thriller)",
+      "review-website": "Kritik (Website)",
+      "question-book": "Frage zum Thriller",
+      "question-website": "Frage zur Website",
+      "question-general": "Allgemeine Frage",
+      "greetings": "Grüße",
+      "error-report": "Fehlermeldung"
+    },
+    "message": "Deine Nachricht"
   },
   "privacy-policy": {
     "title": "Datenschutzerklärung",

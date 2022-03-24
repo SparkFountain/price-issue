@@ -1,1 +1,46 @@
-<p>contact works!</p>
+<mat-card>
+  <mat-card-title>{{ "contact.title" | transloco }}</mat-card-title>
+  <mat-card-subtitle>{{ "contact.subtitle" | transloco }}</mat-card-subtitle>
+  <mat-card-content>
+    <form [formGroup]="formGroup">
+      <!-- Name -->
+      <mat-form-field appearance="outline">
+        <mat-label>{{ "contact.name" | transloco }}</mat-label>
+        <input name="name" matInput formControlName="name" />
+      </mat-form-field>
+
+      <!-- Email Address -->
+      <mat-form-field appearance="outline">
+        <mat-label>{{ "contact.email" | transloco }}</mat-label>
+        <input name="email" matInput formControlName="email" />
+      </mat-form-field>
+
+      <!-- Subject -->
+      <mat-form-field appearance="outline">
+        <mat-label>{{ "contact.subject.label" | transloco }}</mat-label>
+        <input name="subject" matInput formControlName="subject" [matAutocomplete]="auto" />
+      </mat-form-field>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option
+          *ngFor="let subject of subjects"
+          [value]="'contact.subject.' + subject | transloco"
+        >
+          {{ "contact.subject." + subject | transloco }}
+        </mat-option>
+      </mat-autocomplete>
+
+      <!-- Message -->
+      <mat-form-field appearance="outline">
+        <mat-label>{{ "contact.message" | transloco }}</mat-label>
+        <textarea name="message" matInput formControlName="message" rows="10"></textarea>
+      </mat-form-field>
+
+      <!-- Send Button -->
+      <button mat-raised-button color="primary" [disabled]="!formGroup.valid">
+        {{ "general.send" | transloco }}
+      </button>
+
+      <p>Form Status: {{ formGroup.status }}</p>
+    </form>
+  </mat-card-content>
+</mat-card>
