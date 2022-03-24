@@ -9,9 +9,14 @@ import { ExtractsComponent } from './extracts/extracts.component';
 import { DownloadComponent } from './download/download.component';
 
 import { MatCardModule } from '@angular/material/card';
+import { MatTreeModule } from '@angular/material/tree';
 import { TranslocoModule } from '@ngneat/transloco';
 import { CoreModule } from '../core/core.module';
 import { LiteratureComponent } from './literature/literature.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -28,6 +33,11 @@ import { LiteratureComponent } from './literature/literature.component';
     TranslocoModule,
     CoreModule,
     MatCardModule,
+    MatTreeModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTableModule,
+    MatInputModule,
   ],
 })
 export class BookModule {}

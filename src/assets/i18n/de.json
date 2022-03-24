@@ -1,6 +1,8 @@
 {
   "general": {
-    "send": "Abschicken"
+    "send": "Abschicken",
+    "search": "Suchbegriff eingeben",
+    "search-placeholder": "Overtourism"
   },
   "title": "Preisfrage",
   "menu": {
@@ -92,7 +94,13 @@
     },
     "literature": {
       "title": "Literatur",
-      "path": "/das-buch/literatur"
+      "path": "/das-buch/literatur",
+      "content": {
+        "title": "Titel",
+        "author": "Autor",
+        "publisher": "Verlag",
+        "isbn": "ISBN"
+      }
     }
   },
   "background": {

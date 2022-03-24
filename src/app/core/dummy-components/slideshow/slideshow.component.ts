@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { Slide } from './slide.interface';
 
 @Component({
@@ -8,27 +8,43 @@ import { Slide } from './slide.interface';
 })
 export class SlideshowComponent implements OnInit {
   @Input() slides!: Slide[];
+  @ViewChild('slideContainer') slideContainer!: ElementRef<HTMLDivElement>;
 
   containerOffset!: number;
-  isScrolling!: 'left' | 'right' | false;
+  scrollDirection!: 'left' | 'right';
 
   constructor() {}
 
   ngOnInit(): void {
     this.containerOffset = 0;
-    this.isScrolling = false;
+    this.scrollDirection = 'left';
   }
 
   handleSelectSlide(characterName: string): void {
     console.log('[HANDLE SELECT CHARACTER]', characterName);
   }
 
-  handleScrollDirection(direction: 'left' | 'right' | false): void {
-    this.isScrolling = direction;
+  handleScrollDirection(direction: 'left' | 'right'): void {
+    this.scrollDirection = direction;
     this.performScrolling();
   }
 
   performScrolling(): void {
-    this.containerOffset = this.isScrolling === 'left' ? 1 : -1;
+    let offsetDelta: number = this.scrollDirection === 'left' ? -100 : +100;
+
+    this.slideContainer.nativeElement.animate(
+      [
+        // keyframes
+        { transform: `translateX(${this.containerOffset}px)` },
+        { transform: `translateX(${this.containerOffset + offsetDelta}px)` },
+      ],
+      {
+        // timing options
+        duration: 1000,
+        iterations: 1,
+      }
+    );
+
+    setTimeout(() => (this.containerOffset += offsetDelta), 1000);
   }
 }
