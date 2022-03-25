@@ -1,35 +1,43 @@
-<div class="quiz-container">
-  <mat-stepper orientation="vertical" [linear]="false" #stepper >
-    <mat-step *ngFor="let answer of answers; let i = index">
-      <ng-template matStepLabel [matStepperIcon]="i.toString()">
-        {{ 'quiz.' + i + '.title' | transloco }}
-      </ng-template>
-      <img [src]="'/assets/images/quiz/' + i + '.jpg'" />
-      <label>{{ 'quiz.' + i + '.question' | transloco }}</label>
-      <button mat-raised-button color="primary" (click)="userChoices[i] = true" [disabled]="userChoices[i] !== undefined">
-        {{ 'quiz.true' | transloco }}
-      </button>
-      <button mat-raised-button color="warn" (click)="userChoices[i] = false" [disabled]="userChoices[i] !== undefined">
-        {{ 'quiz.false' | transloco }}
-      </button>
+<mat-stepper orientation="vertical" [linear]="false" #stepper>
+  <mat-step *ngFor="let answer of answers; let i = index">
+    <ng-template matStepLabel [matStepperIcon]="i.toString()">
+      {{ "quiz." + i + ".title" | transloco }}
+    </ng-template>
+    <img [src]="'/assets/images/quiz/' + i + '.jpg'" />
+    <label>{{ "quiz." + i + ".question" | transloco }}</label>
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="userChoices[i] = true"
+      [disabled]="userChoices[i] !== undefined"
+    >
+      {{ "quiz.true" | transloco }}
+    </button>
+    <button
+      mat-raised-button
+      color="warn"
+      (click)="userChoices[i] = false"
+      [disabled]="userChoices[i] !== undefined"
+    >
+      {{ "quiz.false" | transloco }}
+    </button>
 
-      <div class="explanation" *ngIf="userChoices[i] !== undefined">
-        <label class="solution right" *ngIf="userChoices[i] === answer">
-          {{ 'quiz.you-are-right' | transloco }}
-        </label>
-        <label class="solution wrong" *ngIf="userChoices[i] !== answer">
-          {{ 'quiz.you-are-wrong' | transloco }}
-        </label>
-        <div [innerHTML]="'quiz.' + i + '.explanation' | transloco"></div>
-      </div>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Done</ng-template>
-      <p>You are now done.</p>
-      <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button (click)="stepper.reset()">Reset</button>
-      </div>
-    </mat-step>
-  </mat-stepper>
-</div>
+    <div class="explanation" *ngIf="userChoices[i] !== undefined">
+      <label class="solution right" *ngIf="userChoices[i] === answer">
+        {{ "quiz.you-are-right" | transloco }}
+      </label>
+      <label class="solution wrong" *ngIf="userChoices[i] !== answer">
+        {{ "quiz.you-are-wrong" | transloco }}
+      </label>
+      <div [innerHTML]="'quiz.' + i + '.explanation' | transloco"></div>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-stepper>

@@ -1,7 +1,7 @@
 /**
 * Generated theme by Material Theme Generator
 * https://materialtheme.arcsine.dev
-* Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48IzAxMzI0OSIsIj9lcjwjYjNjMmM4IiwiO2VyPCMwMTFmMzF$LCIlPmBePCMzZDNkM2QiLCI~ZXI8I2M1YzVjNSIsIjtlcjwjMjcyNzI3fiwid2Fybj5gXjwjYmMwMDAwIiwiP2VyPCNlYmIzYjMiLCI7ZXI8I2E1MDAwMH4sIj9UZXh0PCMwMDAwMDAiLCI~PTwjZmFmYWZhIiwiO1RleHQ8I2ZmZmZmZiIsIjs9PCMyYzJjMmN$LCJmb250cz5bYEA8KC00fixgQDwoLTN$LGBAPCgtMn4sYEA8KC0xfixgQDxoZWFkbGluZX4sYEA8dGl0bGV$LGBAPHN1YiktMn4sYEA8c3ViKS0xfixgQDxib2R5LTJ$LGBAPGJvZHktMX4sYEA8YnV0dG9ufixgQDxjYXB0aW9ufixgQDxpbnB1dCIsInNpemU$bnVsbH1dLCJpY29uczxGaWxsZWQiLCI~bmVzcz50cnVlLCJ2ZXJzaW9uPjExfQ==
+* Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48IzAxMzI0OSIsIj9lcjwjYjNjMmM4IiwiO2VyPCMwMTFmMzF$LCIlPmBePCMzZDNkM2QiLCI~ZXI8I2M1YzVjNSIsIjtlcjwjMjcyNzI3fiwid2Fybj5gXjwjYmMwMDAwIiwiP2VyPCNlYmIzYjMiLCI7ZXI8I2E1MDAwMH4sIj9UZXh0PCMwMDAwMDAiLCI~PTwjZmFmYWZhIiwiO1RleHQ8I2ZmZmZmZiIsIjs9PCMyYzJjMmN$LCJmb250cz5bYEA8KC00IiwiZmFtaWx5PFBvcnQgTGxpZ2F0IFNsYWIiLCJ2YXJpYW50PG1lZGl1bX4sYEA8KC0zIiwiZmFtaWx5PFBvcnQgTGxpZ2F0IFNsYWJ$LGBAPCgtMiIsImZhbWlseTxQb3J0IExsaWdhdCBTbGFifixgQDwoLTEiLCJmYW1pbHk8UG9ydCBMbGlnYXQgU2xhYn4sYEA8aGVhZGxpbmUiLCJmYW1pbHk8T3JhbmllbmJhdW1$LGBAPHRpdGxlIiwiZmFtaWx5PE9yYW5pZW5iYXVtfixgQDxzdWIpLTIiLCJmYW1pbHk8TmV1dG9ufixgQDxzdWIpLTEiLCJmYW1pbHk8TmV1dG9ufixgQDxib2R5LTIiLCJmYW1pbHk8TmV1dG9ufixgQDxib2R5LTEiLCJmYW1pbHk8TmV1dG9ufixgQDxidXR0b24iLCJmYW1pbHk8RG9zaXN$LGBAPGNhcHRpb24iLCJmYW1pbHk8RG9zaXN$LGBAPGlucHV0IiwiZmFtaWx5PERvc2lzIiwic2l6ZT5udWxsfV0sImljb25zPEZpbGxlZCIsIj9uZXNzPnRydWUsInZlcnNpb24$MTF9
 */
 
 @import "~@angular/material/theming";
@@ -10,23 +10,28 @@
 // have to load a single css file for Angular Material in your app.
 
 // Fonts
-@import "https://fonts.googleapis.com/css?family=Material+Icons";
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Slab:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&display=swap");
 
 $fontConfig: (
-  display-4: mat-typography-level(112px, 112px, 300, "Roboto", -0.0134em),
-  display-3: mat-typography-level(56px, 56px, 400, "Roboto", -0.0089em),
-  display-2: mat-typography-level(45px, 48px, 400, "Roboto", 0em),
-  display-1: mat-typography-level(34px, 40px, 400, "Roboto", 0.0074em),
-  headline: mat-typography-level(24px, 32px, 400, "Roboto", 0em),
-  title: mat-typography-level(20px, 32px, 500, "Roboto", 0.0075em),
-  subheading-2: mat-typography-level(16px, 28px, 400, "Roboto", 0.0094em),
-  subheading-1: mat-typography-level(15px, 24px, 500, "Roboto", 0.0067em),
-  body-2: mat-typography-level(14px, 24px, 500, "Roboto", 0.0179em),
-  body-1: mat-typography-level(14px, 20px, 400, "Roboto", 0.0179em),
-  button: mat-typography-level(14px, 14px, 500, "Roboto", 0.0893em),
-  caption: mat-typography-level(12px, 20px, 400, "Roboto", 0.0333em),
-  input: mat-typography-level(inherit, 1.125, 400, "Roboto", 1.5px),
+  display-4:
+    mat-typography-level(112px, 112px, 500, "Port Lligat Slab", -0.0134em),
+  display-3:
+    mat-typography-level(56px, 56px, 400, "Port Lligat Slab", -0.0089em),
+  display-2: mat-typography-level(45px, 48px, 400, "Port Lligat Slab", 0em),
+  display-1: mat-typography-level(34px, 40px, 400, "Port Lligat Slab", 0.0074em),
+  headline: mat-typography-level(24px, 32px, 400, "Oranienbaum", 0em),
+  title: mat-typography-level(20px, 32px, 500, "Oranienbaum", 0.0075em),
+  subheading-2: mat-typography-level(16px, 28px, 400, "Neuton", 0.0094em),
+  subheading-1: mat-typography-level(15px, 24px, 500, "Neuton", 0.0067em),
+  body-2: mat-typography-level(14px, 24px, 500, "Neuton", 0.0179em),
+  body-1: mat-typography-level(14px, 20px, 400, "Dosis", 0.0179em),
+  button: mat-typography-level(14px, 14px, 500, "Dosis", 0.0893em),
+  caption: mat-typography-level(12px, 20px, 400, "Dosis", 0.0333em),
+  input: mat-typography-level(inherit, 1.125, 400, "Dosis", 1.5px),
 );
 
 // Foreground Elements
@@ -155,8 +160,6 @@ body {
   --text-primary-color: #{$light-primary-text};
   --text-primary-lighter-color: #{$dark-primary-text};
   --text-primary-darker-color: #{$light-primary-text};
-
-  margin: 0;
 }
 $mat-primary: (
   main: #013249,
@@ -249,8 +252,15 @@ $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
   font-size: 24px;
   font-family: "Material Icons", "Material Icons";
   .mat-badge-content {
-    font-family: "Roboto";
+    font-family: "Dosis";
   }
+}
+
+// END OF MATERIAL DESIGN
+
+// CUSTOM STYLING
+body {
+  margin: 0;
 }
 
 h1 {
@@ -260,4 +270,27 @@ h1 {
 
 .pointer {
   cursor: pointer !important;
+}
+
+a {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  color: #013249;
+  background: $light-bg-darker-5;
+  padding: 4px 7px;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.page-headline {
+  width: 100vw;
+  position: fixed;
+  top: 120px;
+  text-align: center;
+  color: gold; // TODO: use linear gradient
+}
+
+mat-card {
+  background: rgba(240, 240, 240, 0.85) !important;
+  backdrop-filter: blur(4px);
 }

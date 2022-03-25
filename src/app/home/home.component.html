@@ -1,3 +1,13 @@
-<div class="container">
-  Page
-</div>
+<h1 class="page-headline mat-display-4">{{ "home.title" | transloco }}</h1>
+
+<!-- Thriller -->
+<mat-card [style.top]="'150px'" [style.left]="'50px'">
+  <mat-card-title>{{ "home.thriller" | transloco }}</mat-card-title>
+  <img mat-card-image src="/assets/images/quiz/1.jpg" />
+</mat-card>
+
+<!-- Background Information -->
+<mat-card [style.top]="'150px'" [style.right]="'50px'">
+  <mat-card-title>{{ "home.background-information" | transloco }}</mat-card-title>
+  <img mat-card-image src="/assets/images/quiz/1.jpg" />
+</mat-card>
