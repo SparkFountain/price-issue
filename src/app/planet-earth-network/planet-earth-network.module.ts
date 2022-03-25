@@ -7,7 +7,7 @@ import { HistoryComponent } from './history/history.component';
 import { PhilosophyComponent } from './philosophy/philosophy.component';
 import { DiscoverySpheresComponent } from './discovery-spheres/discovery-spheres.component';
 import { OnlineComponent } from './online/online.component';
-
+import { TranslocoModule } from '@ngneat/transloco';
 
 @NgModule({
   declarations: [
@@ -15,11 +15,8 @@ import { OnlineComponent } from './online/online.component';
     HistoryComponent,
     PhilosophyComponent,
     DiscoverySpheresComponent,
-    OnlineComponent
+    OnlineComponent,
   ],
-  imports: [
-    CommonModule,
-    PlanetEarthNetworkRoutingModule
-  ]
+  imports: [CommonModule, PlanetEarthNetworkRoutingModule, TranslocoModule],
 })
-export class PlanetEarthNetworkModule { }
+export class PlanetEarthNetworkModule {}

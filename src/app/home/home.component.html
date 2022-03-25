@@ -1,13 +1,31 @@
 <h1 class="page-headline mat-display-4">{{ "home.title" | transloco }}</h1>
 
 <!-- Thriller -->
-<mat-card [style.top]="'150px'" [style.left]="'50px'">
+<mat-card [style.top]="'150px'" [style.left]="'50px'" [routerLink]="">
   <mat-card-title>{{ "home.thriller" | transloco }}</mat-card-title>
-  <img mat-card-image src="/assets/images/quiz/1.jpg" />
+  <img mat-card-image src="/assets/images/home/thriller.jpg" />
 </mat-card>
 
 <!-- Background Information -->
-<mat-card [style.top]="'150px'" [style.right]="'50px'">
-  <mat-card-title>{{ "home.background-information" | transloco }}</mat-card-title>
-  <img mat-card-image src="/assets/images/quiz/1.jpg" />
+<mat-card [style.top]="'150px'" [style.right]="'50px'" [routerLink]="">
+  <mat-card-title>
+    {{ "home.background-information" | transloco }}
+  </mat-card-title>
+  <img mat-card-image src="/assets/images/home/background-information.jpg" />
+</mat-card>
+
+<!-- Planet Earth Network -->
+<mat-card [style.bottom]="'50px'" [style.left]="'50px'" [routerLink]="">
+  <mat-card-title class="small-headline">
+    {{ "home.planet-earth-network" | transloco }}
+  </mat-card-title>
+  <img mat-card-image src="/assets/images/home/planet-earth-network.jpg" />
+</mat-card>
+
+<!-- Quiz -->
+<mat-card [style.bottom]="'50px'" [style.right]="'50px'" [routerLink]="'quiz.path' | transloco">
+  <mat-card-title>
+    {{ "home.quiz" | transloco }}
+  </mat-card-title>
+  <img mat-card-image src="/assets/images/home/quiz.jpg" />
 </mat-card>

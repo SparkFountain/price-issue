@@ -1,5 +1,15 @@
 mat-card {
   position: absolute;
   width: 200px;
-  height: 200px;
+  height: 150px;
+  cursor: pointer;
+
+  mat-card-title {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+.small-headline {
+  font-size: 22px;
 }

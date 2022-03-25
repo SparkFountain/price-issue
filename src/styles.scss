@@ -290,7 +290,15 @@ a {
   color: gold; // TODO: use linear gradient
 }
 
+.page-title {
+  
+}
+
 mat-card {
   background: rgba(240, 240, 240, 0.85) !important;
   backdrop-filter: blur(4px);
+}
+
+.mat-display-4 {
+  text-shadow: 1px 3px 5px #2c2c2c;
 }

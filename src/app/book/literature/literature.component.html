@@ -1,10 +1,12 @@
-<mat-card>
-  <mat-card-title>{{ 'the-book.literature.title' | transloco }}</mat-card-title>
+<h1 class="page-headline mat-display-3">
+  {{ "the-book.literature.title" | transloco }}
+</h1>
 
-  <mat-card-subtitle>
-    <form class="search-form">
+<mat-card>
+  <mat-card-subtitle
+    ><form class="search-form">
       <mat-form-field appearance="legacy">
-        <mat-label>{{ 'general.search' | transloco }}</mat-label>
+        <mat-label>{{ "general.search" | transloco }}</mat-label>
         <span matPrefix> <mat-icon>search</mat-icon>&nbsp; </span>
         <input
           name="searchTerm"
@@ -12,9 +14,8 @@
           matInput
           [placeholder]="'general.search-placeholder' | transloco"
         />
-      </mat-form-field>
-    </form>
-  </mat-card-subtitle>
+      </mat-form-field></form
+  ></mat-card-subtitle>
 
   <mat-card-content>
     <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
@@ -35,7 +36,7 @@
           [attr.aria-label]="'Toggle ' + node.name"
         >
           <mat-icon class="mat-icon-rtl-mirror">
-            {{ treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right' }}
+            {{ treeControl.isExpanded(node) ? "expand_more" : "chevron_right" }}
           </mat-icon>
         </button>
         {{ node.name }}
@@ -46,7 +47,7 @@
       <!-- Title -->
       <ng-container matColumnDef="title">
         <th mat-header-cell *matHeaderCellDef>
-          {{ 'the-book.literature.content.title' | transloco }}
+          {{ "the-book.literature.content.title" | transloco }}
         </th>
         <td mat-cell *matCellDef="let element">{{ element.title }}</td>
       </ng-container>
@@ -54,7 +55,7 @@
       <!-- Author -->
       <ng-container matColumnDef="author">
         <th mat-header-cell *matHeaderCellDef>
-          {{ 'the-book.literature.content.author' | transloco }}
+          {{ "the-book.literature.content.author" | transloco }}
         </th>
         <td mat-cell *matCellDef="let element">{{ element.author }}</td>
       </ng-container>
@@ -62,7 +63,7 @@
       <!-- Publisher -->
       <ng-container matColumnDef="publisher">
         <th mat-header-cell *matHeaderCellDef>
-          {{ 'the-book.literature.content.publisher' | transloco }}
+          {{ "the-book.literature.content.publisher" | transloco }}
         </th>
         <td mat-cell *matCellDef="let element">{{ element.publisher }}</td>
       </ng-container>
@@ -70,7 +71,7 @@
       <!-- ISBN -->
       <ng-container matColumnDef="isbn">
         <th mat-header-cell *matHeaderCellDef>
-          {{ 'the-book.literature.content.isbn' | transloco }}
+          {{ "the-book.literature.content.isbn" | transloco }}
         </th>
         <td mat-cell *matCellDef="let element">{{ element.isbn }}</td>
       </ng-container>
