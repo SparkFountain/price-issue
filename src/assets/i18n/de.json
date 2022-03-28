@@ -88,7 +88,16 @@
         "german": "Deutsch"
       },
       "jobs": {
-        "tourism-business-woman": "Tourismus-Kauffrau"
+        "tourism-business-woman": "Tourismus-Kauffrau",
+        "ceo-planet-earth-network": "CEO von Planet Earth Network",
+        "travel-journalist": "Reisejournalist",
+        "software-developer": "Software-Entwickler",
+        "writer": "Schriftstellerin",
+        "eco-activist": "Öko-Aktivist",
+        "chief-inspector": "Hauptkommissar",
+        "pastors-wife": "Pfarrersfrau",
+        "hacker": "Hacker",
+        "radical-left-coordinator": "Koordinator der Radikalen Linken"
       }
     },
     "extracts": {

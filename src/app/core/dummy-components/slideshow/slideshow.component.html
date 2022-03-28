@@ -1,14 +1,10 @@
-<div
-  #slideContainer
-  class="slide-container"
-  [style.left]="containerOffset + 'px'"
->
-  <div class="arrow left" (mousedown)="handleScrollDirection('left')">
+<div #slideContainer class="slide-container">
+  <div class="arrow left" (mousedown)="swipe('left')">
     <i class="fas fa-chevron-circle-left"></i>
   </div>
 
   <div class="slides">
-    <mat-card class="slide" *ngFor="let slide of testSlides">
+    <mat-card class="slide" *ngFor="let slide of activeSlides">
       <mat-card-title>{{ slide.title }}</mat-card-title>
       <mat-card-subtitle *ngIf="slide.subtitle">
         {{ slide.subtitle }}
@@ -23,7 +19,7 @@
     </mat-card>
   </div>
 
-  <div class="arrow right" (mousedown)="handleScrollDirection('right')">
+  <div class="arrow right" (mousedown)="swipe('right')">
     <i class="fas fa-chevron-circle-right"></i>
   </div>
 

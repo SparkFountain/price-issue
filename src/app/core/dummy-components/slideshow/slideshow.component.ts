@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Slide } from './slide.interface';
 
 @Component({
@@ -8,48 +8,57 @@ import { Slide } from './slide.interface';
 })
 export class SlideshowComponent implements OnInit {
   @Input() slides!: Slide[];
-  @ViewChild('slideContainer') slideContainer!: ElementRef<HTMLDivElement>;
-
-  containerOffset!: number;
-  scrollDirection!: 'left' | 'right';
-
-  testSlides!: Slide[];
+  activeSlides!: Slide[];
+  activeSlideIndex!: number;
 
   constructor() {}
 
   ngOnInit(): void {
-    this.containerOffset = 0;
-    this.scrollDirection = 'left';
+    if (!this.slides) {
+      console.error('No slides provided');
+    }
 
-    this.testSlides = this.slides.slice(0, 3);
-    console.log('>>> test slides', this.testSlides.length);
+    if (!Array.isArray(this.slides) || this.slides.length < 3) {
+      console.error('Invalid slides data (must have at least 3 elements)');
+    }
+
+    this.activeSlides = this.slides.slice(0, 3);
+    this.activeSlideIndex = 1;
   }
 
   handleSelectSlide(characterName: string): void {
     console.log('[HANDLE SELECT CHARACTER]', characterName);
   }
 
-  handleScrollDirection(direction: 'left' | 'right'): void {
-    this.scrollDirection = direction;
-    this.performScrolling();
-  }
-
-  performScrolling(): void {
-    let offsetDelta: number = this.scrollDirection === 'left' ? -100 : +100;
-
-    this.slideContainer.nativeElement.animate(
-      [
-        // keyframes
-        { transform: `translateX(${this.containerOffset}px)` },
-        { transform: `translateX(${this.containerOffset + offsetDelta}px)` },
-      ],
-      {
-        // timing options
-        duration: 1000,
-        iterations: 1,
+  swipe(direction: 'left' | 'right'): void {
+    if (direction === 'left') {
+      if (this.activeSlideIndex === 0) {
+        this.activeSlideIndex--;
+      } else {
+        this.activeSlideIndex = this.slides.length - 1;
       }
-    );
+    }
 
-    setTimeout(() => (this.containerOffset += offsetDelta), 1000);
+    if (direction === 'right') {
+      if (this.activeSlideIndex === this.slides.length - 1) {
+        this.activeSlideIndex = 0;
+      } else {
+        this.activeSlideIndex++;
+      }
+    }
+
+    this.activeSlides = [
+      this.slides[
+        this.activeSlideIndex === 0
+          ? this.slides.length - 1
+          : this.activeSlideIndex - 1
+      ],
+      this.slides[this.activeSlideIndex],
+      this.slides[
+        this.activeSlideIndex < this.slides.length - 1
+          ? this.activeSlideIndex + 1
+          : 0
+      ],
+    ];
   }
 }

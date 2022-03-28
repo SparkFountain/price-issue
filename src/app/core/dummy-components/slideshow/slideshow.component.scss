@@ -1,5 +1,7 @@
 @import "../../../../styles.scss";
 
+$arrowWidth: 100px;
+
 .slide-container {
   display: flex;
   flex-direction: row;
@@ -12,7 +14,7 @@
   // background: red;
 
   .arrow {
-    width: 48px;
+    width: $arrowWidth;
     height: 100%;
     font-size: 32px;
     display: flex;
@@ -37,7 +39,7 @@
   }
 
   .slides {
-    width: calc(100vw - 48px * 2);
+    width: calc(100vw - #{$arrowWidth} * 2);
     // background: lightcoral;
     display: flex;
     flex-direction: row;
