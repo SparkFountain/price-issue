@@ -13,11 +13,16 @@ export class SlideshowComponent implements OnInit {
   containerOffset!: number;
   scrollDirection!: 'left' | 'right';
 
+  testSlides!: Slide[];
+
   constructor() {}
 
   ngOnInit(): void {
     this.containerOffset = 0;
     this.scrollDirection = 'left';
+
+    this.testSlides = this.slides.slice(0, 3);
+    console.log('>>> test slides', this.testSlides.length);
   }
 
   handleSelectSlide(characterName: string): void {

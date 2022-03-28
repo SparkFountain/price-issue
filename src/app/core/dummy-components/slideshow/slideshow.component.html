@@ -1,19 +1,35 @@
-<div class="arrow left" (mousedown)="handleScrollDirection('left')">
-  <i class="fas fa-chevron-circle-left"></i>
-</div>
-
-<div class="arrow right" (mousedown)="handleScrollDirection('right')">
-  <i class="fas fa-chevron-circle-right"></i>
-</div>
-
 <div
   #slideContainer
   class="slide-container"
   [style.left]="containerOffset + 'px'"
 >
-  <mat-card
+  <div class="arrow left" (mousedown)="handleScrollDirection('left')">
+    <i class="fas fa-chevron-circle-left"></i>
+  </div>
+
+  <div class="slides">
+    <mat-card class="slide" *ngFor="let slide of testSlides">
+      <mat-card-title>{{ slide.title }}</mat-card-title>
+      <mat-card-subtitle *ngIf="slide.subtitle">
+        {{ slide.subtitle }}
+      </mat-card-subtitle>
+
+      <img *ngIf="slide.imagePath" mat-card-image [src]="slide.imagePath" />
+
+      <mat-card-content
+        *ngIf="slide.content"
+        [innerHTML]="slide.content"
+      ></mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="arrow right" (mousedown)="handleScrollDirection('right')">
+    <i class="fas fa-chevron-circle-right"></i>
+  </div>
+
+  <!-- <mat-card
     class="slide"
-    *ngFor="let slide of slides"
+    *ngFor="let slide of testSlides"
     (click)="handleSelectSlide(slide.title)"
   >
     <mat-card-title>{{ slide.title }}</mat-card-title>
@@ -27,5 +43,5 @@
       *ngIf="slide.content"
       [innerHTML]="slide.content"
     ></mat-card-content>
-  </mat-card>
+  </mat-card> -->
 </div>
