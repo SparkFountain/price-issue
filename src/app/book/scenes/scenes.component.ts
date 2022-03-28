@@ -21,15 +21,22 @@ export class ScenesComponent implements OnInit {
       'new-zealand': ['auckland', 'christchurch', 'ranfurly', 'russell'],
       portugal: ['madeira'],
       spain: ['gran-canaria'],
+      mauritius: ['mauritius'],
     };
 
-    this.slides = ['canada', 'france', 'germany', 'portugal', 'spain'].map(
-      (nation: string) => ({
-        title: this.translocoService.translate(
-          `the-book.scenes.nations.${nation}.title`
-        ),
-        imagePath: `assets/images/scenes/${nation}/${nation}_rectangular_icon_with_frame_256.png`,
-      })
-    );
+    this.slides = [
+      'canada',
+      'france',
+      'germany',
+      'new-zealand',
+      'portugal',
+      'spain',
+      'mauritius',
+    ].map((nation: string) => ({
+      title: this.translocoService.translate(
+        `the-book.scenes.nations.${nation}.title`
+      ),
+      imagePath: `assets/images/scenes/${nation}/${nation}_rectangular_icon_with_frame_256.png`,
+    }));
   }
 }

@@ -32,7 +32,7 @@ export class SlideshowComponent implements OnInit {
 
   swipe(direction: 'left' | 'right'): void {
     if (direction === 'left') {
-      if (this.activeSlideIndex === 0) {
+      if (this.activeSlideIndex > 0) {
         this.activeSlideIndex--;
       } else {
         this.activeSlideIndex = this.slides.length - 1;
@@ -40,10 +40,10 @@ export class SlideshowComponent implements OnInit {
     }
 
     if (direction === 'right') {
-      if (this.activeSlideIndex === this.slides.length - 1) {
-        this.activeSlideIndex = 0;
-      } else {
+      if (this.activeSlideIndex < this.slides.length - 1) {
         this.activeSlideIndex++;
+      } else {
+        this.activeSlideIndex = 0;
       }
     }
 
