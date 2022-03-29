@@ -72,31 +72,95 @@
       "nations": {
         "canada": {
           "title": "Kanada",
-          "subtitle": "Unberührte Natur"
+          "subtitle": "Unberührte Natur",
+          "vancouver": {
+            "title": "Vancouver",
+            "content": {
+              "0": "Die pulsierende Millionenstadt an der Westküste Kanadas wird nicht ohne Grund als „schönste Stadt der Welt“ bezeichnet. Jedes Jahr strömen unzählige Touristen in die Metropole, um die Sehenswürdigkeiten zu bestaunen und das Flair zu genießen.",
+              "1": "Doch das rasante Wachstum Vancouvers hat seinen Preis. Wohnraum wird immer knapper und die Downtown ist längst in fester Hand von Großkonzernen und Superreichen. Bis auf ein kleines Gebiet – die East Hastings Street. Dort leben Mittellose und Drogenabhängige Tür and Tür, ohne Perspektive oder sozialen Halt. Kein Wunder also, dass Not und Elend eines Tages in Wut auf die betuchten Touristen von nebenan umschlagen…"
+            }
+          }
+        },
+        "denmark": {
+          "title": "Dänemark",
+          "subtitle": "Lorem Ipsum",
+          "christiania": {
+            "title": "Freistadt Christiania",
+            "content": {
+              "0": "",
+              "1": ""
+            }
+          }
         },
         "france": {
           "title": "Frankreich",
-          "subtitle": "Lorem Ipsum"
+          "subtitle": "Lorem Ipsum",
+          "la-reunion": {
+            "title": "La Réunion",
+            "content": {
+              "0": "Malerische Sandstrände, traumhafte Gebirgslandschaften, natürliche Schönheit: La Réunion gilt als Paradies sowohl bei Wanderern als auch bei Sonnenanbetern.",
+              "1": ""
+            }
+          }
         },
         "germany": {
           "title": "Deutschland",
-          "subtitle": "Lorem Ipsum"
+          "subtitle": "Lorem Ipsum",
+          "berlin": {
+            "title": "Berlin",
+            "content": {
+              "0": "Die bunte Hauptstadt der Bundesrepublik Deutschland ist ein Magnet für Künstler und Kulturschaffende, ebenso wie für Unternehmer und Start-Ups.",
+              "1": ""
+            }
+          },
+          "dresden": {
+            "title": "Dresden",
+            "content": {
+              "0": "Mit ihrer historischen Altstadt, dem grünen Elbtal und vielfältigen Kulturangeboten verkörpert Dresden eine ausgewogene Mischung zwischen Großstadt-Charme und Beschaulichkeit.",
+              "1": ""
+            }
+          }
+        },
+        "mauritius": {
+          "title": "Mauritius",
+          "subtitle": "Badeparadies"
         },
         "new-zealand": {
           "title": "Neuseeland",
-          "subtitle": "Lorem Ipsum"
+          "subtitle": "Lorem Ipsum",
+          "auckland": {
+            "title": "Auckland",
+            "content": {
+              "0": "nmitten von Wolkenkratzern, Restaurants und Einkaufszentren blüht das Leben in der bevölkerungsreichsten Stadt Neuseelands.",
+              "1": ""
+            }
+          }
         },
         "portugal": {
           "title": "Portugal",
-          "subtitle": "Lorem Ipsum"
+          "subtitle": "Lorem Ipsum",
+          "madeira": {
+            "title": "Madeira",
+            "content": {
+              "0": "",
+              "1": ""
+            }
+          }
         },
         "spain": {
           "title": "Spanien",
           "subtitle": "Inselwelten"
         },
-        "mauritius": {
-          "title": "Mauritius",
-          "subtitle": "Badeparadies"
+        "sweden": {
+          "title": "Schweden",
+          "subtitle": "Lorem Ipsum",
+          "oland": {
+            "title": "Öland",
+            "content": {
+              "0": "Die zweitgrößte Insel Schwedens und zugleich kleinste historische Provinz des Landes hat für Naturfreunde viel zu bieten.",
+              "1": ""
+            }
+          }
         }
       }
     },

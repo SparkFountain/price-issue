@@ -71,3 +71,16 @@ $arrowWidth: 100px;
     }
   }
 }
+
+.selected-slide-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: maroon;
+
+  mat-card {
+    // width: 100%;
+    // height: 100%;
+  }
+}

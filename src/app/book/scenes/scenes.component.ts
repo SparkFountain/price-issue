@@ -16,21 +16,25 @@ export class ScenesComponent implements OnInit {
   ngOnInit(): void {
     this.nations = {
       canada: ['vancouver', 'vancouver-island'],
+      denmark: ['christiania'],
       france: ['la-reunion'],
       germany: ['berlin', 'dresden', 'usedom'],
       'new-zealand': ['auckland', 'christchurch', 'ranfurly', 'russell'],
       portugal: ['madeira'],
+      sweden: ['oland'],
       spain: ['gran-canaria'],
       mauritius: ['mauritius'],
     };
 
     this.slides = [
       'canada',
+      'denmark',
       'france',
       'germany',
       'new-zealand',
       'portugal',
       'spain',
+      'sweden',
       'mauritius',
     ].map((nation: string) => ({
       title: this.translocoService.translate(

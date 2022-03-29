@@ -10,6 +10,7 @@ export class SlideshowComponent implements OnInit {
   @Input() slides!: Slide[];
   activeSlides!: Slide[];
   activeSlideIndex!: number;
+  selectedSlide!: Slide | null;
 
   constructor() {}
 
@@ -24,10 +25,11 @@ export class SlideshowComponent implements OnInit {
 
     this.activeSlides = this.slides.slice(0, 3);
     this.activeSlideIndex = 1;
+    this.selectedSlide = null;
   }
 
-  handleSelectSlide(characterName: string): void {
-    console.log('[HANDLE SELECT CHARACTER]', characterName);
+  handleSelectSlide(slideIndex: number): void {
+    this.selectedSlide = this.slides[slideIndex];
   }
 
   swipe(direction: 'left' | 'right'): void {

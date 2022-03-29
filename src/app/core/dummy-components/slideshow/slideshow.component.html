@@ -1,10 +1,14 @@
-<div #slideContainer class="slide-container">
+<div class="slide-container" *ngIf="!selectedSlide">
   <div class="arrow left" (mousedown)="swipe('left')">
     <i class="fas fa-chevron-circle-left"></i>
   </div>
 
   <div class="slides">
-    <mat-card class="slide" *ngFor="let slide of activeSlides">
+    <mat-card
+      class="slide"
+      *ngFor="let slide of activeSlides; let i = index"
+      (click)="handleSelectSlide(i)"
+    >
       <mat-card-title>{{ slide.title }}</mat-card-title>
       <mat-card-subtitle *ngIf="slide.subtitle">
         {{ slide.subtitle }}
@@ -22,4 +26,24 @@
   <div class="arrow right" (mousedown)="swipe('right')">
     <i class="fas fa-chevron-circle-right"></i>
   </div>
+</div>
+
+<div class="selected-slide-container" *ngIf="selectedSlide">
+  <mat-card class="">
+    <mat-card-title>{{ selectedSlide.title }}</mat-card-title>
+    <mat-card-subtitle *ngIf="selectedSlide.subtitle">
+      {{ selectedSlide.subtitle }}
+    </mat-card-subtitle>
+
+    <img
+      *ngIf="selectedSlide.imagePath"
+      mat-card-image
+      [src]="selectedSlide.imagePath"
+    />
+
+    <mat-card-content
+      *ngIf="selectedSlide.content"
+      [innerHTML]="selectedSlide.content"
+    ></mat-card-content>
+  </mat-card>
 </div>
