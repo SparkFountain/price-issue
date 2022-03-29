@@ -4,6 +4,21 @@
     "search": "Suchbegriff eingeben",
     "search-placeholder": "Overtourism"
   },
+  "authentication": {
+    "login": {
+      "title": "Anmelden",
+      "subtitle": "Dieser Bereich ist nur für Administratoren gedacht.",
+      "username": {
+        "label": "Benutzername",
+        "placeholder": "Admin"
+      },
+      "password": {
+        "label": "Passwort",
+        "placeholder": "••••••••••"
+      },
+      "send": "Abschicken"
+    }
+  },
   "title": "Preisfrage",
   "menu": {
     "the-book": {
@@ -93,6 +108,7 @@
       },
       "jobs": {
         "tourism-business-woman": "Tourismus-Kauffrau",
+        "ceo-rohde-travel": "CEO von Rohde Reisen & Meer",
         "ceo-planet-earth-network": "CEO von Planet Earth Network",
         "travel-journalist": "Reisejournalist",
         "software-developer": "Software-Entwickler",
@@ -110,7 +126,17 @@
     },
     "download": {
       "title": "Download",
-      "path": "/das-buch/download"
+      "path": "/das-buch/download",
+      "a-thriller-for-you": "Ein Thriller für dich",
+      "subtitle": "Eine Frage des Preises?",
+      "content": {
+        "0": "Hier kannst du dir den Thriller <b>Preisfrage</b> als PDF oder ePUB herunterladen.",
+        "1": "Eine Frage des Preises?"
+      },
+      "buttons": {
+        "pdf": "Als PDF herunterladen",
+        "epub": "Als ePUB herunterladen"
+      }
     },
     "literature": {
       "title": "Literatur",

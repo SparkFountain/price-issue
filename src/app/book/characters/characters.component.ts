@@ -36,6 +36,20 @@ export class CharactersComponent implements OnInit {
         imagePath: 'sophie-hollaender.svg',
       },
       {
+        name: 'Carina Seidel',
+        job: 'tourism-business-woman',
+        age: 25,
+        nationality: 'german',
+        imagePath: 'carina-seidel.svg',
+      },
+      {
+        name: 'Max Rohde',
+        job: 'ceo-rohde-travel',
+        age: 64,
+        nationality: 'german',
+        imagePath: 'max-rohde.svg',
+      },
+      {
         name: 'Carolina Perth',
         job: 'ceo-planet-earth-network',
         age: 41,
@@ -109,7 +123,9 @@ export class CharactersComponent implements OnInit {
 
     this.slides = this.characters.map((character: Character) => ({
       title: character.name,
-      subtitle: this.transloco.translate(`the-book.characters.jobs.${character.job}`),
+      subtitle: this.transloco.translate(
+        `the-book.characters.jobs.${character.job}`
+      ),
       imagePath: `/assets/images/characters/${character.imagePath}`,
     }));
   }

@@ -1,1 +1,17 @@
-<h1 class="page-headline mat-display-3">{{ 'the-book.download.title' | transloco }}</h1>
+<h1 class="page-headline mat-display-3">
+  {{ "the-book.download.title" | transloco }}
+</h1>
+
+<mat-card>
+  <mat-card-title>
+    {{ "the-book.download.a-thriller-for-you" | transloco }}
+  </mat-card-title>
+  <mat-card-subtitle>
+    {{ "the-book.download.subtitle" | transloco }}
+  </mat-card-subtitle>
+
+  <mat-card-content>
+    <p [innerHTML]="'the-book.download.content.0' | transloco"></p>
+    <h2>{{ 'the-book.download.content.1' | transloco }}</h2>
+  </mat-card-content>
+</mat-card>

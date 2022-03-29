@@ -11,6 +11,13 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
+  {
+    path: 'login',
+    loadChildren: () =>
+      import('./authentication/authentication.module').then(
+        (m) => m.AuthenticationModule
+      ),
+  },
   ...['the-book', 'das-buch'].map((path: string) => ({
     path,
     loadChildren: () => import('./book/book.module').then((m) => m.BookModule),

@@ -1,0 +1,46 @@
+<mat-card>
+  <mat-card-title>
+    {{ "authentication.login.title" | transloco }}
+  </mat-card-title>
+  <mat-card-subtitle>
+    {{ "authentication.login.subtitle" | transloco }}
+  </mat-card-subtitle>
+  <mat-card-content>
+    <form type="submit" [formGroup]="formGroup" (submit)="handleSubmit()">
+      <!-- Username -->
+      <mat-form-field appearance="outline">
+        <mat-label>
+          {{ "authentication.login.username.label" | transloco }}
+        </mat-label>
+        <input
+          type="text"
+          matInput
+          formControlName="username"
+          [placeholder]="
+            'authentication.login.username.placeholder' | transloco
+          "
+        />
+      </mat-form-field>
+
+      <!-- Password -->
+      <mat-form-field appearance="outline">
+        <mat-label>
+          {{ "authentication.login.password.label" | transloco }}
+        </mat-label>
+        <input
+          type="password"
+          matInput
+          formControlName="password"
+          [placeholder]="
+            'authentication.login.password.placeholder' | transloco
+          "
+        />
+      </mat-form-field>
+
+      <!-- Send -->
+      <button mat-raised-button color="primary" [disabled]="!formGroup.valid">
+        {{ "authentication.login.send" | transloco }}
+      </button>
+    </form>
+  </mat-card-content>
+</mat-card>

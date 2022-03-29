@@ -12,9 +12,25 @@ export class ExtractsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.slides = [{
-      title: 'Prolog',
-      content: '<b>Lorem Ipsum</b> <i>dolor</i> sit amet.'
-    }]
+    this.slides = [
+      {
+        title: 'Ajdovščina, Slowenien',
+        subtitle: '16. Juni 2016',
+        content: 'Du musst mir helfen. Sag für heute alle Termine ab. Finde alles über diesen Levi Vass heraus. '
+      },
+      {
+        title: 'Venedig, Italien',
+        subtitle: '14. Juli 2017',
+      },
+      {
+        title: 'Vancouver, Kanada',
+        subtitle: '14. Juli 2017',
+        content: 'Touristenmesse',
+      },
+      {
+        title: 'Brocken, Harz, Deutschland',
+        subtitle: '1. April 2018',
+      },
+    ];
   }
 }
